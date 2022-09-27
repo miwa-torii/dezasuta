@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.box1-flex{
+display: flex;
+list-style: none;
+justify-content: space-between;
+max-width: 960px; 
+margin: 0 auto;
+
+}
+
+.box1-flex li{
+    background-color: #0f88ea;
+    height: 300px;
+    width: 31.25%;
+    margin-bottom: 20px;
+    
+}
+
+.box2-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.box2-wrap li{
+    background-color: red;
+    width: 31.25%;
+    height: 300px;
+    margin-bottom: 20px;
+}
