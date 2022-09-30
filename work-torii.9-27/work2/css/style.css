@@ -51,12 +51,11 @@ img {
 }
 .navigation{
     display: flex;
-    margin-top: 10px;
+    padding-top: 10px;
 
 }
 .navigation li{
-    margin-right: 30px;
-    padding-left: 30px;
+    padding: 0 30px;
 }
 
 .navigation li+li{
@@ -74,7 +73,6 @@ img {
         display: block;
     }
     .navigation li{
-        width: 100%;
         border-bottom:2px solid #000;
         font-size: 20px;
         padding: 0 0 20px 10px;
@@ -85,7 +83,7 @@ img {
     }
     h1{
         font-size: 40px;
-        margin: 0 0 20px 10px;
+        padding: 0 0 20px 10px;
     }
     
 }
