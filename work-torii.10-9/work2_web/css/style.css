@@ -55,7 +55,7 @@ h1{
 }
     
 .big-box{
-    max-width: 960px;
+    /* max-width: 960px; */
     display: flex;
     justify-content: space-between;
     
@@ -65,7 +65,7 @@ h1{
 .box{
     background-color: #fff;
     /* margin:0 10px; */
-    width: 41.66%;
+    width: 32%;
 }
 
 h2{

@@ -19,7 +19,7 @@ li {
     line-height: 1;
     /*デフォルトの文字色、font-familyを予め当てておく*/
     color: #000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    font-family: serif,"游明朝", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
@@ -40,10 +40,16 @@ img {
     vertical-align: bottom;
     border: none;
 }
+
+
+/* ーー全体幅ーー */
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: serif;
+}
 /* ------------top------------------ */
 .wrapper1{
-    max-width: 1366px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 48px 0;
@@ -62,10 +68,7 @@ img {
 .navigation li{
     padding: 16px;
 }
-.main-image{
-    max-width: 1366px;
-    margin: 0 auto;
-}
+
 .main-image p{
     font-size: 24px;
     line-height: 1.5;
@@ -73,8 +76,6 @@ img {
 }
 /* -----------main------------------------ */
 .contents{
-    max-width: 1366px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 56px;
@@ -84,7 +85,7 @@ img {
     text-align: center;
 }
 .colum p{
-    width: 910px;
+    width: 650px;
     font-size: 16px;
     line-height: 1.5;
     padding-top: 24px;
@@ -105,8 +106,6 @@ img {
 }
 /* -----------footer---------- */
 .wrapper3{
-    max-width: 1366px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid  rgb(222, 219, 219);
@@ -117,13 +116,12 @@ img {
 h3{
    padding-bottom: 40px; 
 }
-.person-box{
-    max-width: 330px;
+.person{
+    width: 250px;
     display: flex;
+    padding-bottom: 16px;
 }
-.name{
-    padding-left: 24px;
-}
+
 /* ーーー切り取りたかった箇所ーーー */
 /* .person-image{
     width: 100%;
@@ -136,21 +134,27 @@ h3{
     width: 100px;
     height: 100px;
 }
+.person >p:last-child{
+    margin: 25px 0;
+    font-weight: bold;
+}
 .person-box p{
+    width: 250px;
     line-height: 1.5;
-    word-break: break-all;
 }
 
 .footer-right{
-    width: 330px;
+    width: 250px;
+    padding-left: 32px;
     
 }
 .footer-right p{
+
     line-height: 1.5;
     word-break: break-all;
 }
 .post{
-    width: 330px;
+    width: 250px;
     padding-left: 32px;
 }
 .post p{
@@ -162,7 +166,7 @@ h3{
     border-bottom: 1px solid rgb(222, 219, 219);;
 }
 .category{
-    width: 330px;
+    width: 250px;
 }
 .category p{
     padding-bottom: 24px;
@@ -174,9 +178,6 @@ h3{
 }
 .text {
     padding-bottom: 56px; ;
-}
-.footer p{
-    word-break: break-all;
 }
 .wrapper4 p{
     text-align: center;
