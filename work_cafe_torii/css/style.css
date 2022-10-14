@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ーーーーヘッダーーーーー */
+body{
+    background-color: #e8d9bf;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 6.53% 0 2.51%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logo{
+    width: 226.7px;
+}
+.pc_nav ul{
+    display: flex;
+
+}
+.pc_nav ul li{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    margin-right: 56px;
+    width: 105px;
+
+}
+.pc_nav ul li:last-child{
+    margin-right: 0;
+}
+.slider img{
+    width: 100%;
+
+}
+/* ーーーーメインーーーー */
+
+.subtitle{
+    text-align: center;
+    padding-top: 105px;
+    font-size: 30px;
+}
+.subtitle h2{
+    font-size: 82px;
+    padding-top: 52px;
+    font-weight: lighter;
+
+}
+.subtitle p:last-child{
+    font-size: 23px;
+    padding-top: 45px;
+    line-height: 1.5;
+}
+/* ------------------------------ */
+
+.about-us{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 95px 10px;
+    box-sizing: border-box;
+}
+.coffee-photo{
+    width: 500px;
+    height: 560px;
+}
+.coffee-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 50px 0;
+
+}
+.text-wrapper{
+    width: 420px;
+
+}
+.text-title{
+    width: 272.3px;
+    padding: 66.5px 0 54px;
+}
+.text-title2{
+    font-size: 44px;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+.text-wrapper p:last-child{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ------------------------------ */ 
+.menu{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.menu-title{
+    width: 151.3px;
+    padding: 0 0 45px 424px;
+}
+
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-item{
+    width: 300px;
+
+}
+.menu-item img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 50px 0 0;
+}
+h3{
+    font-size: 38px;
+    color: red;
+    margin: -20px 0 10px 10px;
+}
+.menu-text{
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 95px;
+}
+
+/* ------------------------------ */
+
+.gallery{
+    padding: 0 10px;
+}
+.gallery-title{
+    width: 245px;
+    padding: 0 0 10px 43.2%;
+}
+
+.photo-wrapper{
+    display: flex;
+    margin-bottom: 65.5px;
+}
+.photo-wrapper img{
+    width: 20%;
+}
+
+/* ------------------------------ */
+.event{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.event-title{
+    width: 173.8px;
+    padding: 0 0 39px 413px;
+}
+table{
+    border: 2px solid #4f260b;
+    width: 1000px;
+    background-color: #fff;
+    padding: 42px 0 42px 170px;
+    margin-bottom: 72px;
+}
+table a{
+    text-decoration: underline;
+    padding-left: 51px;
+}
+.news{
+    text-align: left;
+    font-size: 23px;
+    line-height: 1.9;
+}
+/* ------------------------------ */
+
+.access-title{
+    width: 213.8px;
+    padding: 0 0 48px 44.1%;
+}
+.map iframe{
+    width: 100%;
+    height: 471.2px;
+}
+
+/* ーーーーフッターーーーー */
+footer{
+    background-color: #fff;
+
+}
+.footer-wrapper{
+    display: flex;
+    padding: 72px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer-wrapper img{
+    width: 226.7px;
+    padding-right: 56px;
+}
+.address{
+    font-size: 20px;
+    line-height: 1.7;
+}
+.copyright{
+    text-align: center;
+    padding-bottom: 72px;
+    font-size: 16px;
+}
+.toTop{
+    width: 125px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
