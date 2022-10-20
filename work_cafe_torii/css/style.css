@@ -170,7 +170,6 @@ h1{
 }
 .menu-item img{
     width: 100%;
-    object-fit: cover;
     border-radius: 0 50px 0 0;
 }
 h4{
@@ -214,18 +213,22 @@ h4{
     max-width: 100%;
     margin: 0 auto;
     background-color: #fff;
-    border: 2px solid #4f260b;
+    border: 3.6px solid #4f260b;
     display: block;
-    height: 200px;
+}
+.news-box{
+    padding: 32.7px 158px;
 }
 .news-box li{
     display: flex;
     font-size: 23px;
+    line-height: 1.95;
 }
-
-.news-box a{
+span{
+    padding-left: 56.4px;
     text-decoration: underline;
 }
+
 /* ------------------------------ */
 .access{
     max-width: 100%;
@@ -247,20 +250,20 @@ footer{
 
 }
 .footer-wrapper{
+    max-width: 1000px;
     display: flex;
     justify-content: left;
-    max-width: 1000px;
     margin:auto auto;
     padding: 72px 10px;
 }
 
 .footer-logo{
     width: 226.7px;
-    padding-right: 56px;
 }
 .address{
     font-size: 20px;
-    line-height: 1.7;
+    line-height: 1.95;
+    padding-left: 56px;
 }
 .copyright{
     text-align: center;
