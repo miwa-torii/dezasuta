@@ -8,13 +8,24 @@
     <title>カフェサイト</title>
     <meta name="description" content="デザインカフェのサイトです">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header id="header">
         <div class="header-wrap">
-            <h1><img src="images/design_cafe_logo_header@2x.png" alt=""></h1>
+            <h1><img src="images/design_cafe_logo_header@2x.png" alt="デザインカフェ"></h1>
             <nav class="pc_nav">
+                <ul>
+                    <li><a href="#ABOUT-US">ABOUT US</a></li>
+                    <li><a href="#MENU">MENU</a></li>
+                    <li><a href="#GALLERY">GALLERY</a></li>
+                    <li><a href="#EVENT">EVENT</a></li>
+                    <li><a href="#ACCESS">ACCESS</a></li>
+                </ul>
+            </nav>
+            <div class="hum_menu_btn"><span></span></div>
+            <nav class="sp_nav">
                 <ul>
                     <li><a href="#ABOUT-US">ABOUT US</a></li>
                     <li><a href="#MENU">MENU</a></li>
@@ -25,7 +36,12 @@
             </nav>
         </div>
         <div class="slider">
-            <p><img src="images/pc_first-100.jpg" alt="カフェの様子"></p>
+            <p>
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_first-100.jpg" alt="カフェの様子">
+                </picture>
+            </p>
         </div>
     </header>
     <!-- ------メイン------ -->
@@ -34,12 +50,20 @@
             <div class="subtitle">
                 <p>Have a happy day From a cup of coffee.</p>
                 <h2>ハッピーに溢れる1日を<br>1杯のコーヒーから。</h2>
-                <p>毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+                <p>毎日を丁寧に大切に過ごしたい。<span class="br-1">だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間と<span
+                            class="br-1">こだわりのコーヒーを提供したい。</span></span>
+                </p>
             </div>
         </section>
         <section>
             <div class="about-us" id="ABOUT-US">
-                <p class="coffee-photo"><img src="images/pc_about-100.jpg" alt="コーヒー"></p>
+                <p class="mobile-title"><img src="images/about_us@2x.png" alt=""></p>
+                <p class="coffee-photo">
+                    <picture>
+                        <source srcset="images/about_us@2x-100.jpg" media="(max-width:767px)">
+                        <img src="images/pc_about-100.jpg" alt="コーヒー">
+                    </picture>
+                </p>
                 <div class="text-wrapper">
                     <p class="text-title"><img src="images/about_us@2x.png" alt=""></p>
                     <p class="text-title2">私たちが提供する<br>こだわりのコーヒー</p>
@@ -53,7 +77,12 @@
                 <h3 class="menu-title"><img src="images/menu@2x.png" alt=""></h3>
                 <div class="menu-wrapper">
                     <div class="menu-item">
-                        <p class="menu-image"><img src="images/drink_sp@2x-100.jpg" alt="ドリンク"></p>
+                        <p class="menu-image">
+                            <picture>
+                                <source srcset="images/pc_menu_drink-100.jpg" media="(max-width:767px)">
+                                <img src="images/drink_sp@2x-100.jpg" alt="ドリンク">
+                            </picture>
+                        </p>
                         <h4>Drink</h4>
                         <p class="menu-text">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                     </div>
@@ -87,9 +116,9 @@
                 <h3 class="event-title"><img src="images/event@2x.png" alt=""></h3>
                 <div class="news">
                     <ul class="news-box">
-                        <li><a href="">2020.06.23<span>7月はイベント出店のため0/0お休みします</span></a></li>
-                        <li><a href="">2020.03.15<span>春の新商品発売。話題のあのブランドとコラボ</span></a></li>
-                        <li><a href="">2020.02.06<span>コーヒーの日で30%OFFイベントを開催[3日間限定]</span></a></li>
+                        <li><a href="">2020.06.23<span class="br-2">7月はイベント出店のため0/0お休みします</span></a></li>
+                        <li><a href="">2020.03.15<span class="br-2">春の新商品発売。話題のあのブランドとコラボ</span></a></li>
+                        <li><a href="">2020.02.06<span class="br-2">コーヒーの日で30%OFFイベントを開催[3日間限定]</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -118,6 +147,14 @@
             <a href="#header"><img src="images/to_top@2x.png" alt="トップへ戻る"></a>
         </p>
     </footer>
+    <script>
+        $(function () {
+            $('.hum_menu_btn').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.hum_menu_btn').toggleClass('open')
+            });
+        });
+    </script>
 
 </body>
 
