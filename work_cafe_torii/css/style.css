@@ -50,6 +50,10 @@ img {
 }
 
 /* ーーーーヘッダーーーーー */
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #e8d9bf;
 }
@@ -65,7 +69,7 @@ body{
     box-sizing: border-box;
 }
 h1{
-    width: 226.7px;
+    width: 187px;
 }
 .pc_nav ul{
     display: flex;
@@ -380,6 +384,9 @@ footer{
 }
 
 @media screen and (max-width:767px){
+    .header-wrap{
+        padding:14.5px 0 0 20px;
+    }
     .subtitle{
         font-size: 4.53vw;
         padding-top: 42.9px;
@@ -394,10 +401,6 @@ footer{
         line-height: 1.87;
         text-align: center;
         padding: 27px 20px 0;
-    }
-    .br-1::before{
-        content: "\A";
-        white-space: pre;
     }
     
     /* ------------------------ */
@@ -487,8 +490,11 @@ footer{
     .news-box span{
         display: block;
         padding-left: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
-    .news1{
+    /* .news1{
         width: 13em;
         overflow: hidden;
         white-space: nowrap;
@@ -505,7 +511,7 @@ footer{
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-    }
+    } */
 
     /* .br-2::before{
         content: "\A";
