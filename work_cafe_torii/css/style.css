@@ -67,6 +67,7 @@ body{
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 }
 h1{
     width: 187px;
@@ -91,8 +92,17 @@ h1{
 }
 .slider img{
     width: 100%;
-
 }
+.slick-dots{
+    bottom: 20px;
+}
+.slick-dots li.slick-active button:before{
+    color: #fff;
+}
+.slick-dots li button:before{
+    color: #fff;
+}
+
 /* ハンバーガーメニュー削除 */
 .hum_menu_btn,.sp_nav{
     display: none;
@@ -162,6 +172,7 @@ h1{
     margin: 0 auto;
     padding: 0 10px 95px;
     box-sizing: border-box;
+    scroll-margin-top: 30px;
 }
 .menu-title{
     width: 151.3px;
@@ -192,6 +203,10 @@ h4{
 }
 
 /* ------------------------------ */
+.gallery{
+    scroll-margin-top: 30px;
+    padding-bottom: 59.5px;
+}
 .gallery-title{
     width: 245px;
     margin: 0 auto;
@@ -199,11 +214,39 @@ h4{
 }
 
 .photo-wrapper{
+    position: relative;
     display: flex;
-    margin-bottom: 59.5px;
+    width: 100%;
 }
 .photo-wrapper img{
     width: 20%;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;
+	z-index: 1;
+    top: 42%;
+    cursor: pointer;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    height: 20px;
+    width: 20px;
+}
+
+/*戻る矢印*/
+.slick-prev {
+    left:22%;
+    transform: rotate(-135deg);
+}
+
+/*次へ矢印*/
+.slick-next {
+    right:22%;
+    transform: rotate(45deg);
 }
 
 /* ------------------------------ */
@@ -211,6 +254,7 @@ h4{
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px 88px;
+    scroll-margin-top: 30px;
    
 }
 .event-title{
@@ -249,6 +293,7 @@ h4{
 .access{
     max-width: 100%;
     margin: 0 auto;
+    scroll-margin-top: 30px;
 }
 .access-title{
     width: 213.8px;
@@ -356,6 +401,7 @@ footer{
         top: 0;
         left: 0;
         width: 100%;
+        z-index: 1;
 
     }
     .sp_nav ul{
@@ -464,6 +510,22 @@ footer{
     }
     .photo-wrapper img{
         width: 100%;
+    }
+    .slick-prev, 
+    .slick-next {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    }
+    /*戻る矢印*/
+    .slick-prev {
+        left:3%;
+        transform: rotate(-135deg);
+    }
+
+    /*次へ矢印*/
+    .slick-next {
+        right:3%;
+        transform: rotate(45deg);
     }
 
     /* -------------------------- */
