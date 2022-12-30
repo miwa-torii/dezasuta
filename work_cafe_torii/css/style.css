@@ -242,11 +242,17 @@ h4{
     left:22%;
     transform: rotate(-135deg);
 }
-
 /*次へ矢印*/
 .slick-next {
     right:22%;
     transform: rotate(45deg);
+}
+/* デフォルト矢印消す */
+.slick-next::before{
+    display: none;
+}
+.slick-prev::before{
+    display: none;
 }
 
 /* ------------------------------ */
