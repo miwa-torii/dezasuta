@@ -145,7 +145,7 @@
                         </div>
                         <div class="about-box">
                             <p><span>好きなこと</span><span>・・・・・・</span></p>
-                            <p class="about-text2">買い物 ・ 甘いもの ・ 制作活動<br>［ペーパークラフト、洋裁、パズルやビーズなど細々したものも得意です］</p>
+                            <p class="about-text2">買うこと ・ 食べること ・ 作ること<br>［ペーパークラフト、洋裁、パズルやビーズなど得意です］</p>
                         </div>
                         <div class="about-box">
                             <p><span>スキル</span><span>・・・・・・</span></p>
@@ -160,7 +160,7 @@
                         </div>
                         <div class="about-box-sp">
                             <p>好きなこと：</p>
-                            <p class="about-text2-sp">買い物 ・ 甘いもの ・ 制作活動<br>ペーパークラフト、洋裁<br>パズルやビーズなど<br>細々したものも得意です</p>
+                            <p class="about-text2-sp">買うこと ・ 食べること ・ 作ること<br>ペーパークラフト、洋裁<br>パズルやビーズなど得意です。</p>
                         </div>
                         <div class="about-box-sp">
                             <p>スキル：</p>
@@ -171,9 +171,9 @@
                 </div>
                 <div class="about-wrap2">
                     <p><span></span></p>
-                    <p class="about-wrap2-text">以前の仕事はホテルマンです。<br class="br-sp">アルバイト時代も含めて<br
-                            class="br-sp">サービス業に勤めていました。<br>
-                        ヒアリングなども楽しくできたらと思っています。</p>
+                    <p class="about-wrap2-text">以前はホテルに勤めていました。<br class="br-sp">アルバイト時代も含めて接客業一筋だったので<br
+                            class="br-sp">お客様とコミュニケーションを取ることが楽しいと思ってる人間です。<br>
+                        webデザインに関してもヒアリングなども楽しくできたらと思っています。</p>
                 </div>
                 <div class="btn-wrap">
                     <div class="btn-2">
@@ -225,17 +225,18 @@
                 //スクロール位置を取得
                 var scrollY = $('.top-scroll').scrollTop();
                 //background-size+(スクロール位置/10)
-                var bgSize = 80 + (scrollY / 5);
+                var bgSize = 70 + (scrollY / 3);
 
                 //bgSizeが200より小さければ
-                if (bgSize < 500) {
+                if (bgSize < 700) {
                     //background-sizeにbgSizeを設定
                     $('.top-scroll').css('background-size', bgSize + '%');
 
                 } else {
                     $('.top-scroll').fadeOut();
                     $('body').removeClass('over_flow_hidden');
-                    $('.scroll-box').fadeIn(3000);
+                    $('.scroll-box').addClass('show');
+                    // $('.scroll-box').hide().fadeIn('slow');
 
                 }
             });

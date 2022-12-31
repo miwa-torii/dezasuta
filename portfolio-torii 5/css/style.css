@@ -20,10 +20,10 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(../images/top@2x.png);/* 相対パス */
+    background-image: url(../images/top1@2x.png);/* 相対パス */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 70%;
     margin: 0 auto;
     z-index: 100;
     background-color: #fff;
@@ -41,6 +41,12 @@ header {
 }
 .scroll-box{
     display: flex;/* 木のイラストとアイコンを横並び */
+    opacity: 0;
+    
+}
+.scroll-box.show{
+    opacity: 1;
+    transition: 1s;
 }
 
 .top-image {
@@ -54,7 +60,7 @@ header {
     top: 14%;
     right: 10%;
     animation: anime-orange 2s ease-in-out;
-    animation-delay: 3s;/* アニメが始まるまでの遅延時間 */
+    animation-delay: 1s;/* アニメが始まるまでの遅延時間 */
     animation-fill-mode: backwards;/* 再生後そのまま表示 */
     
 }
@@ -76,7 +82,7 @@ header {
     top: 6%;
     right: 14%;
     animation: anime-perple 2s ease-in-out;
-    animation-delay: 3.5s;
+    animation-delay: 2s;
     animation-fill-mode: backwards;
 }
 
@@ -96,7 +102,7 @@ header {
     top: 26%;
     left: 24%;
     animation: anime-pink 2s ease-in-out;
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-fill-mode: backwards;
 }
 
@@ -116,7 +122,7 @@ header {
     top: 21%;
     left: 24%;
     animation: anime-yellow 2s ease-in-out;
-    animation-delay: 4.5s;
+    animation-delay: 4s;
     animation-fill-mode: backwards;
 }
 
@@ -464,7 +470,7 @@ h2 span {
 
 .about-icon {
     position: absolute;
-    right: -4%;
+    right: 25%;
     top: 70%;
 }
 
@@ -858,7 +864,7 @@ footer p {
 
     .about-text-sp {
         display: block;
-        width: 300px;
+        width: 310px;
         margin: 0 auto;
     }
 
@@ -944,6 +950,12 @@ footer p {
 }
 
 @media screen and (max-width:600px) {
+    .top-scroll{
+        display: none;
+    }
+    .over_flow_hidden {
+        overflow: visible;
+    }
     .about-pic {
         position: static;
         width: 88.3%;
@@ -978,6 +990,9 @@ footer p {
 }
 
 @media screen and (max-width:375px) {
+    .top-scroll{
+        display: none;
+    }
     .about-icon {
         position: absolute;
         top: 28%;
