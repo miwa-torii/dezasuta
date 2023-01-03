@@ -682,13 +682,13 @@ footer p {
         display: none;
     }
 
-    .br-pc {
+    /* .br-pc {
         display: none;
-    }
+    } */
 
-    .br-sp {
+    /* .br-sp {
         display: block;
-    }
+    } */
 
     .leaf2 {
         display: none;
@@ -965,6 +965,9 @@ footer p {
 
     .btn-wrap img {
         width: 64.1px;
+    }
+    .br-sp {
+        display: block;
     }
 }
 
